@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Closure!</title>
+  <script>
+    function setUp(){
+      var num = 666;
+      var json;
+      //Closure is a closed over open variable
+        //I can access it if I make accessors
+      logNum = function(){console.log(num);}
+      increaseNum = function(){num++;}
+
+    }//setUp
+    setUp();
+    logNum();
+    increaseNum();
+    logNum();
+  </script>
+</head>
+
+<body>
+
+
+</body>
+</html>
